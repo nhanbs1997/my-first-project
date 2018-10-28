@@ -5,7 +5,6 @@
 .container{
 	width: 1350px;
 	height: 4869px;
-	background: gray;
 	position: relative;
 }
 .top{
@@ -275,7 +274,6 @@
 	font-size: 	17px;
 	font-weight: 600;
 	line-height: 16px;
-	text-align: center;
 	color: white;
 }
 .nhom-thong-tin .thong-tin .thanh-tuu{
@@ -286,7 +284,426 @@
 	top: 55.93%; /* 66px (118px) */
 	font-family: 'Montserrat' , sans-serif;
 	font-size: 	15px;
-	text-align: center;
 	font-weight: 500;
 	color: white;
+}
+.event{
+	width: 100%; /* 1350px (1350px) */
+	height: 6.41%; /* 312px (4869px) */
+	position: absolute;
+	top: 40.67%; /* 1980px (4869px) */
+	background-color: #fbfbfb;
+}
+.event .event-left{
+	width: 39.33%; /* 531px (1350px) */
+	height: 100%; /* 312px (312px) */
+	float: left;
+	position: relative;
+}
+.event .event-left .event-text{
+	width: 15.63%; /* 83px (531px) */
+	height: 11.86%; /* 37px (312px) */
+	position: absolute;
+	left: 17.33%; /* 92px (531px) */
+	top: 8.97%; /* 28px (312px) */
+	font-family: 'Great Vibes', cursive;
+	font-size: 42px;
+}
+.event .event-left .gach-ngang{
+	width: 30.7%; /* 163px (531px) */
+	height: 0.64%; /* 2px (312px) */
+	background-color: #e5cf05;
+	position: absolute;
+	left: 17.33%; /* 92px (531px) */
+	top: 28.21%; /* 88px (312px) */
+}
+.event .event-left .cuong-nhiet-chung-ket{
+	width: 79.47%; /* 422px (531px) */
+	height: 43.59%; /* 136px (312px) */
+	position: absolute;
+	left: 16.76%; /* 89px (531px) */
+	top: 35.58%; /* 111px (312px) */
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 2.4; 
+}
+.event .event-right{
+	width: 60.67%; /* 819px (1350px) */
+	height: 100%; /* 312px (312px) */
+	float: left;
+}
+.menu{
+	width: 83.78%; /* 1131px (1350px) */
+	height: 13.9%; /* 677px (4869px) */
+	position: absolute;
+	left: 7.93%; /* 107px (1350px) */
+	top: 48.24%; /* 2349px (4869px) */
+}
+.menu .menu-top{
+	width: 100%; /* 1131px (1131px) */
+	height: 38.4%; /* 260px (677px) */
+	position: relative;
+}
+.menu .menu-top .our-menu{
+	width: 14.41%; /* 163px (1131px) */
+	height: 15.38%; /* 40px (260px) */
+	position: absolute;
+	left: 42.71%;/* 483px (1131px) */
+	font-family: 'Great Vibes', cursive;
+	font-size: 42px;
+}
+.menu .menu-top .gach-ngang{
+	width: 14.41%; /* 163px (1131px) */
+	height: 0.77%; /* 2px (260px) */
+	position: absolute;
+	left: 42.71%;/* 483px (1131px) */
+	top: 23.08%; /* 60px (260px) */
+	background-color: #e5cf05;
+}
+.menu .menu-top .duoi-day{
+	width: 31.39%; /* 355px (1131px) */
+	height: 16.15%; /* 42px (260px) */
+	position: absolute;
+	left: 34.48%;/* 390px (1131px) */
+	top: 31.15%; /* 81px (260px) */
+	font-family: Arial;
+	font-size: 13px;
+	text-align: center;
+	line-height: 2;
+	color: #7c7c7c;
+}
+.menu .menu-top .gach-ngang-ngan{
+	width: 2.83%; /* 32px (1131px) */
+	height: 0.77%; /* 2px (260px) */
+	position: absolute;
+	left: 29.35%; /* 332px (1131px) */
+	top: 70.77%; /* 184px (260px) */
+	background-color: #e5cf05;
+}
+.menu .menu-top nav{
+	width: 33.16%; /* 375px (1131px) */
+	height: 6.92%; /* 18px (260px) */
+	position: absolute;
+	left: 33.24%; /* 376px (1131px) */
+	top: 67.69%; /* 176px (260px) */
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+.menu .menu-top nav ul a{
+	color : #24282c;
+}
+.menu .menu-top nav ul li{
+	list-style-type: none;
+	float: left;
+	position: absolute;
+}
+.menu .menu-top nav ul li:hover{
+	color: #e5cf05;
+}
+.menu .menu-top nav ul .active{
+	color: #e5cf05;
+}
+.menu .list-mon-an{
+	width: 100%; /* 1131px (1131px) */
+	height: 61.6%; /* 417px (677px) */
+	position: relative;
+}
+.menu .list-mon-an .mon-an{
+	width: 48.28%; /* 546px (1131px) */
+	height: 26.86%; /* 112px (417px) */
+	position: relative;
+	position: absolute;
+}
+.menu .list-mon-an .mon-an .anh{
+	width: 30.59%; /* 167px (546px) */
+	height: 100%; /* 112px (112px) */
+	float: left;
+}
+.menu .list-mon-an .mon-an .ten-mon-an{
+	width: 65.38%; /* 357px (546px) */
+	height: 11.6%; /* 13px (112px) */
+	float: left;
+	position: absolute;
+	left: 34.25%; /* 187px (546px) */
+	top: 4.46%; /* 5px (112px) */
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 13px;
+}
+.menu .list-mon-an .mon-an .mo-ta{
+	width: 65.38%; /* 357px (546px) */
+	height: 33.04%; /* 37px (112px) */
+	float: left;
+	position: absolute;
+	right: 0%;
+	top: 35.71%; /* 40px (112px) */
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 13px;
+	color: #878787;
+}
+.gallery{
+	width: 100%; /* 1350px (1350px) */
+	height: 10.78%; /* 525px (4869px) */
+	position: absolute;
+	top: 63.03%; /* 3069px (4869px) */
+}
+.gallery .gallery-text{
+	width: 7.85%; /* 106px (1350px) */
+	height: 10.48%; /* 55px (525px) */
+	position: absolute;
+	left: 45.85%; /* 619px (1350px) */
+	top: 6.86%; /* 36px (525px) */
+	font-family: 'Great Vibes', cursive;
+	font-size: 42px;
+}
+.gallery .gach-ngang{
+	width: 12.15%; /* 164px (1350px) */
+	height: 0.38%; /* 2px (525px) */
+	position: absolute;
+	left: 43.7%; /* 590px (1350px) */
+	top: 19.24%; /* 101px (525px) */
+	background-color: #e5cf05;
+}
+.gallery .duoi-day{
+	width: 29.63%; /* 400px (1350px) */
+	height: 3.24%; /* 17px (525px) */
+	position: absolute;
+	left: 35.11%; /* 474px (1350px) */
+	top: 25.33%; /* 133px (525px) */
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 17px;
+	color: #7c7c7c;
+}
+.gallery .anh{
+	width: 100%; /* 1350px (1350px) */
+	height: 64.19%; /* 337px (525px) */
+	position: absolute;
+	bottom: 0%;
+}
+.gallery .anh img{
+	float: left;
+}
+.dat-ban{
+	width: 69.63%; /* 940px (1350px) */
+	height: 12.24%; /* 596px (4869px) */
+	position: absolute;
+	left: 15.26%; /* 206px (1350px) */
+	top: 76.28%; /* 3714px (4869px) */
+}
+.dat-ban .reservation{
+	width: 16.81%; /* 158px (940px) */
+	height: 5.87%; /* 35px (596px) */
+	position: absolute;
+	left: 41.17%; /* 387px (940px) */
+	font-family: 'Great Vibes', cursive;
+	font-size: 42px;
+}
+.dat-ban .gach-ngang{
+	width: 17.34%; /* 163px (940px) */
+	height: 0.34%; /* 2px (596px) */
+	position: absolute;
+	left: 40.96%; /* 385px (940px) */
+	top: 9.9%; /* 59px (596px) */
+	background-color: #e5cf05;
+}
+.dat-ban .de-tranh{
+	width: 32.55%; /* 306px (940px) */
+	height: 6.71%; /* 40px (596px) */
+	position: absolute;
+	left: 33.19%; /* 312px (940px) */
+	top: 13.59%; /* 81px (596px) */
+	font-family: Arial;
+	font-size: 13px;
+	text-align: center;
+	line-height: 2;
+}
+.dat-ban img{
+	position: absolute;
+	bottom: 0%;
+}
+.dat-ban form{
+	width: 42.77%; /* 402px (940px) */
+	height: 62.42%; /* 372px (596px) */
+	position: absolute;
+	left: 28.72%; /* 270px (940px) */
+	top: 31.54%; /* 188px (596px) */
+}
+.dat-ban form input{
+	width: 39.55%; /* 159px (402px) */
+	height: 4.57%; /* 17px (372px) */
+	border: 1px solid #dbdbdb;
+	position: absolute;
+	padding: 17px;
+	color: #a7a7a7;
+}
+/* Ẩn scroll type number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+.dat-ban form textarea{
+	width: 91%; /* 368px (402px) */
+	height: 18.82%; /* 70px (372px) */
+	position: absolute;
+	top: 52.69%; /* 196px (372px) */
+	padding: 17px;
+	border: 1px solid #dbdbdb;
+}
+.dat-ban form button{
+	width: 29.85%; /* 120px (402px) */
+	height: 13.71%; /* 51px (372px) */
+	background-color: black;
+	position: absolute;
+	bottom: 0%;
+	border: none;
+	left: 35.32%; /* 142px (402px) */
+	color: white;
+	font-weight: 600;
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 14px;
+}
+::placeholder {
+	color: #a7a7a7;
+}
+.footer{
+	width: 100%; /* 1350px (1350px) */
+	height: 8.93%; /* 435px (4869px) */
+	position: absolute;
+	bottom: 0%;
+	background-color: #1b2024;
+}
+.footer img{
+	position: absolute;
+	left: 7.11%; /* 96px (1350px) */
+	top: 14.71%; /* 64px (435px) */
+}
+.footer .we-have{
+	width: 19.19%; /* 259px (1350px) */
+	height: 13.79%; /* 60px (435px) */
+	position: absolute;
+	left: 7.78%; /* 105px (1350px) */
+	top: 37.24%; /* 162px (435px) */
+	font-family: Arial;
+	font-size: 14px;
+	color: #cdcdcd;
+	line-height: 1.8;
+}
+.footer .group-icon{
+	width: 10.07%; /* 136px (1350px) */
+	height: 7.13%; /* 31px (435px) */
+	position: absolute;
+	left: 7.78%; /* 105px (1350px) */
+	top: 58.16%; /* 253px (435px) */
+}
+.footer .group-icon .icon{
+	width: 20.59%; /* 28px (136px) */
+	height: 90.32%; /* 28px (31px) */
+	border: 1.5px solid white;
+	position: absolute;
+	text-align: center;
+	color: white;
+}
+.footer .group-icon .icon i{
+	margin-top: 5px;
+}
+.footer .group-footer{
+	width: 21.19%; /* 286px (1350px) */
+	height: 46.44%; /* 202px (435px) */
+	position: absolute;
+	left: 29.56%; /* 399px (1350px) */
+	top: 19.54%; /* 85px (435px) */
+	color: #d8d8d8;
+}
+.footer .group-footer .gach-ngang-ngan{
+	width: 9.79%; /* 28px (286px) */
+	height: 0.5%; /* 1px (202px) */
+	background-color: #a7753a;
+	position: absolute;
+	top: 2.97%; /* 6px (202px) */
+	left: 1px;
+}
+.footer .group-footer .thong-tin{
+	width: 42.21%; /* 116px (286px) */
+	height: 6.44%; /* 13px (202px) */
+	position: absolute;
+	left: 11.19%; /* 32px (286px) */
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #e5cf05;
+}
+.footer .group-footer .fa-map-marker-alt{
+	position: absolute;
+	top: 27.72%; /* 56px (202px) */
+}
+.footer .group-footer .dia-chi{
+	width: 69.58%; /* 199px (286px) */
+	height: 20.3%; /* 41px (202px) */
+	position: absolute;
+	left: 10.14%; /* 29px (286px) */
+	top: 25.74%; /* 52px (202px) */
+	font-family: 'Roboto', sans-serif;
+	font-size: 	14px;
+	line-height: 1.6;
+}
+.footer .group-footer .fa-phone{
+	position: absolute;
+	top: 56.93%; /* 115px (202px) */
+}
+.footer .group-footer .phone{
+	width: 69.58%; /* 199px (286px) */
+	height: 7.43%; /* 15px (202px) */
+	position: absolute;
+	left: 10.14%; /* 29px (286px) */
+	top: 56.44%; /* 114px (202px) */
+	font-family: 'Roboto', sans-serif;
+	font-size: 	14px;
+	line-height: 15px;
+}
+.footer .group-footer .fa-envelope{
+	position: absolute;
+	top: 74.26%; /* 150px (202px) */
+}
+.footer .group-footer .email{
+	width: 73.08%; /* 209px (286px) */
+	height: 20.3%; /* 41px (202px) */
+	position: absolute;
+	left: 10.14%; /* 29px (286px) */
+	top: 72.77%; /* 147px (202px) */
+	font-family: 'Roboto', sans-serif;
+	font-size: 	14px;
+	line-height: 1.5;
+}
+.footer .group-footer .gio-mo-cua{
+	width: 77.97%; /* 223px (286px) */
+	height: 32.18%; /* 65px (202px) */
+	position: absolute;
+	top: 23.76%; /* 48px (202px) */
+	font-family: 'Roboto', sans-serif;
+	font-size: 	14px;
+	line-height: 1.7;
+}
+#map{
+	width:100%;
+	height:82.18%;
+	position: absolute;
+	bottom: 0%;
+}
+.footer .cot-dien-kitchen{
+	width: 100%;
+	height: 18.85%; /* 82px (435px) */
+	position: absolute;
+	bottom: 0%;
+	border-top: 1px solid #494d50;
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+	color: #7a7a7a;
+	line-height: 82px;
 }
