@@ -5,18 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cột Điện Kitchen</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/javascript.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer>
+
+		function initialize() {
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
 		<div class="top">
-			<img class="mySlides fade" src="img/slideshow3.jpg" style="width:100%">
-			<img class="mySlides fade" src="img/slideshow2.jpg" style="width:100%">
 			<img class="mySlides fade" src="img/slideshow1.jpg"> 
 			<div class="top-header">
 				<div class="dia-chi">
@@ -37,13 +41,16 @@
 			</div>	
 			<div class="top-slideshow">
 				<div class="logo-cot-dien-kitchen"><a href=""><img src="img/logo-cot-dien-kitchen.png"></a></div>
-				<nav>
+				<nav class="topnav" id="myTopnav">
 					<ul>
 						<a href=""><li class="li-active">HOME</li></a>
-						<a href=""><li style="left: 20.67% /* 93px (450px) */">EVENT</li></a>
-						<a href=""><li style="left: 41.78% /* 188px (450px) */">MENU</li></a>
-						<a href=""><li style="left: 62% /* 279px (450px) */">GALLERY</li></a>
-						<a href=""><li style="right: 0% /* 389px (450px) */">CONTACT</li></a>
+						<a href=""><li class="li-responsive" style="left: 20.67% /* 93px (450px) */">EVENT</li></a>
+						<a href=""><li class="li-responsive"  style="left: 41.78% /* 188px (450px) */">MENU</li></a>
+						<a href=""><li class="li-responsive"  style="left: 62% /* 279px (450px) */">GALLERY</li></a>
+						<a href=""><li class="li-responsive"  style="right: 0% /* 389px (450px) */">CONTACT</li></a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
 					</ul>
 				</nav>
 				<div class="dat-truoc">
@@ -183,10 +190,34 @@
 			<div class="gach-ngang"></div>
 			<div class="duoi-day">Dưới đây là một số hình ảnh về nhà hàng và một số món ăn đặc biệt.</div>
 			<div class="anh">
-				<img src="img/gallery-anh-1.jpg">
-				<img src="img/gallery-anh-2.jpg">
-				<img src="img/gallery-anh-3.jpg">
-				<img src="img/gallery-anh-4.jpg">
+				<a href="" id="group-anh1">
+					<div class="container">
+						<img id="anh1" src="img/gallery-anh-1.jpg">
+						<div id="overlay1" class="color-overlay"></div>
+					</div>
+					<div id="demo1" class="search-icon"></div>
+				</a>
+				<a href="" id="group-anh2">
+					<div class="container">
+						<img id="anh2" src="img/gallery-anh-2.jpg">
+						<div id="overlay2" class="color-overlay"></div>
+					</div>
+					<div id="demo2" class="search-icon" style="left: 36%"></div>
+				</a>
+				<a href="" id="group-anh3">
+					<div class="container">
+						<img id="anh3" src="img/gallery-anh-3.jpg">
+						<div id="overlay3" class="color-overlay"></div>
+					</div>
+					<div id="demo3" class="search-icon" style="left: 61%"></div>
+				</a>
+				<a href="" id="group-anh4">
+					<div class="container">
+						<img id="anh4" src="img/gallery-anh-4.jpg">
+						<div id="overlay4" class="color-overlay"></div>
+					</div>
+					<div id="demo4" class="search-icon" style="left: 86%"></div>
+				</a>
 			</div>
 		</div>
 		<div class="dat-ban">
@@ -231,8 +262,8 @@
 				<div class="email">muavangcompany@gmail.com<br>muavangwarehouse@gmail.com</div>
 			</div>
 			<div class="group-footer" style="left: 51.04% /* 689px (1350px) */">
-				<div class="gach-ngang-ngan"></div>
-				<div class="thong-tin">OPENING HOUR</div>
+				<div class="gach-ngang-ngan-responsive" class="gach-ngang-ngan"></div>
+				<div class="opening-hour" class="thong-tin">OPENING HOUR</div>
 				<div class="gio-mo-cua">
 					Monday - Friday: ........6am - 9pm<br>
 					Saturday - Sunday: ........6am - 10pm<br>
@@ -240,8 +271,8 @@
 				</div>
 			</div>
 			<div class="group-footer" style="left: 72.74% /* 982px (1350px) */">
-				<div class="gach-ngang-ngan"></div>
-				<div class="thong-tin">MAP</div>
+				<div class="map-gach-ngan-reponsive" class="gach-ngang-ngan"></div>
+				<div class="map-responsive" class="thong-tin">MAP</div>
 				<div id="map"></div>
 				<script>
 					function myMap() {
@@ -260,11 +291,58 @@
 						var map = new google.maps.Map(mapCanvas, mapOptions);
 					}
 				</script>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXF48LRYeoRg_Q6M1jBNczrmouMDR2dOQ&callback=myMap"></script>
+				<script src=""></script>
 			</div>
 			<div class="cot-dien-kitchen">© 2018 Cột Điện Kitchen. All Rights Reserved</div>
 		</div>
-
 	</div>
+	<script>
+		$(document).ready(function(){
+			$("#group-anh1").hover(function(){
+				document.getElementById('demo1').innerHTML = '<i class="fas fa-search"></i>';
+				$("#anh1").css("transform", "scale(1.5)");
+				$("#overlay1").css("opacity", "0.4");
+				$("#overlay1").css("background-color", "black");
+				$("#overlay1").css("transition", "ease 1s");
+			}, function(){
+				document.getElementById('demo1').innerHTML = '';
+				$("#anh1").css("transform", "scale(1)");
+				$("#overlay1").css("opacity", "0");
+			});
+			$("#group-anh2").hover(function(){
+				document.getElementById('demo2').innerHTML = '<i class="fas fa-search"></i><div class="background-black"></div>';
+				$("#anh2").css("transform", "scale(1.5)");
+				$("#overlay2").css("opacity", "0.4");
+				$("#overlay2").css("background-color", "black");
+				$("#overlay1").css("transition", "ease 1s");
+			}, function(){
+				document.getElementById('demo2').innerHTML = '';
+				$("#anh2").css("transform", "scale(1)");
+				$("#overlay2").css("opacity", "0");
+			});
+			$("#group-anh3").hover(function(){
+				document.getElementById('demo3').innerHTML = '<i class="fas fa-search"></i><div class="background-black"></div>';
+				$("#anh3").css("transform", "scale(1.5)");
+				$("#overlay3").css("opacity", "0.4");
+				$("#overlay3").css("background-color", "black");
+				$("#overlay1").css("transition", "ease 1s");
+			}, function(){
+				document.getElementById('demo3').innerHTML = '';
+				$("#anh3").css("transform", "scale(1)");
+				$("#overlay3").css("opacity", "0");
+			});
+			$("#group-anh4").hover(function(){
+				document.getElementById('demo4').innerHTML = '<i class="fas fa-search"></i><div class="background-black"></div>';
+				$("#anh4").css("transform", "scale(1.5)");
+				$("#overlay4").css("opacity", "0.4");
+				$("#overlay4").css("background-color", "black");
+				$("#overlay1").css("transition", "ease 1s");
+			}, function(){
+				document.getElementById('demo4').innerHTML = '';
+				$("#anh4").css("transform", "scale(1)");
+				$("#overlay4").css("opacity", "0");
+			});
+		});
+	</script>
 </body>
 </html>
